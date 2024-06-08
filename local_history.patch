@@ -1,0 +1,22 @@
+Index: app/src/main/java/com/example/weather_app/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/weather_app/MainActivity.java b/app/src/main/java/com/example/weather_app/MainActivity.java
+--- a/app/src/main/java/com/example/weather_app/MainActivity.java	
++++ b/app/src/main/java/com/example/weather_app/MainActivity.java	(date 1717739356663)
+@@ -1,11 +1,11 @@
+-else{
+                         Toast.makeText(MainActivity.this, "Enter City", Toast.LENGTH_SHORT).show();
+                     }
+                     getWeather task= new getWeather();
+                     temp[0] = task.execute(url).get();
+                 }catch(ExecutionException e){
+                     e.printStackTrace();
+-                }catch(InterruptedException e){
++        else{
++        }catch(InterruptedException e){
+                     e.printStackTrace();
+                 }
+                 if (temp[0]== null){
